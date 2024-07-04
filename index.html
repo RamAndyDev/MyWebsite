@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Website</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -11,19 +11,47 @@
         <h1>Welcome to My Website</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <!-- Introduction Section -->
-        <section id="introduction">
-            <h2>Introduction</h2>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Home</h2>
             <p>Welcome to my website! Here, you'll find information about my services, portfolio, and how to contact me.</p>
             <p>I am a mobile app development specialist with extensive experience in both hybrid and native Android development. My expertise includes creating robust, user-friendly applications that function seamlessly across multiple platforms. I have a deep understanding of frameworks such as React Native, Flutter, and Xamarin for hybrid development, allowing me to deliver versatile and efficient solutions. My proficiency in Android development encompasses Kotlin and Java, adhering to best practices and leveraging the latest technologies to build scalable, high-performance apps. With a strong emphasis on UI/UX design, I ensure that every app I develop offers an exceptional user experience.</p>
             <p>I specialize in creating beautiful, functional, and user-friendly websites too.</p>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>Welcome to Embitesoft, your trusted partner in digital transformation and technology innovation. Established in 2006, Embitesoft has consistently delivered advanced technology solutions across various sectors, including Automotive, Internet of Things (IoT), Digital Commerce, and Digital Experience.</p>
+            <div class="about">
+                <h3>Our Expertise</h3>
+                <p>At Embitesoft, we are dedicated to driving digital transformation through our expertise in multiple domains. Our team collaborates with global automotive OEMs and Tier 1 suppliers to develop cutting-edge automotive solutions and full-stack IoT implementations. Our innovative strategies in digital commerce ensure that our business partners experience seamless, data-driven omnichannel solutions and unified customer experiences.</p>
+            </div>
+            <div class="about">
+                <h3>Automotive and IoT Solutions</h3>
+                <p>We are a preferred technology partner for the automotive industry, working closely with clients to develop safety-critical applications and next-generation systems. Our IoT solutions encompass everything from IoT sensor nodes to advanced AI and ML services, ensuring that we can support a wide range of industrial needs with precision and reliability.</p>
+            </div>
+            <div class="about">
+                <h3>Digital Commerce and Experience</h3>
+                <p>In the digital commerce sphere, we deliver comprehensive services, from platform design and development to marketing automation and business analytics. Our goal is to enhance customer experiences and drive growth through innovative, data-driven solutions that cater to the evolving needs of the digital market.</p>
+            </div>
+            <div class="about">
+                <h3>Global Presence</h3>
+                <p>Our headquarters is located in Whitefield, Bengaluru, with additional development centers in Ahmedabad and Pune. We also have offices in Germany, the UK, the USA, and the UAE, allowing us to serve our clients globally and maintain a strong international presence.</p>
+            </div>
+            <div class="about">
+                <p>At Embitesoft, we are committed to building a smarter, more connected world through continuous innovation and excellence in technology. Join us as we shape the future of digital transformation.</p>
+            <p>For more information, please visit <a href="http://embitesoft.com">Embitesoft</a></p>
+            </div>
         </section>
 
         <!-- Services Section -->
@@ -97,6 +125,39 @@
             <!-- Add more portfolio items as needed -->
         </section>
 
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>123 Avanthi Nagar Thota<br>Hyderabad, Telangana, 500018.</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@embite.com">info@embite.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+918886995951">+91 88869 95951</a></p>
+                </div>
+            </div>
+            <form action="submit-form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
         
     </main>
     <footer>

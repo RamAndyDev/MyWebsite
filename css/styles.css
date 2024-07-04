@@ -14,15 +14,21 @@ header {
     color: #fff;
     padding: 1rem 0;
     text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 header nav ul li {
-    display: inline;
     margin: 0 10px;
 }
 
@@ -33,6 +39,7 @@ header nav ul li a {
 
 main {
     padding: 20px;
+    padding-top: 80px; /* Adjust for fixed header */
     flex: 1;
 }
 
