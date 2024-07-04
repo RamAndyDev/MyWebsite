@@ -18,13 +18,67 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h2>Main Content</h2>
-            <p>This is the main content of the homepage.</p>
+        <!-- Introduction Section -->
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>Welcome to my website! Here, you'll find information about my services, portfolio, and how to contact me. I specialize in creating beautiful, functional, and user-friendly websites.</p>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Services</h2>
+            <div class="service">
+                <h3>Web Design</h3>
+                <p>I create visually appealing and responsive web designs that provide a seamless user experience across all devices.</p>
+            </div>
+            <div class="service">
+                <h3>Web Development</h3>
+                <p>From static websites to dynamic web applications, I offer comprehensive web development services tailored to your needs.</p>
+            </div>
+            <div class="service">
+                <h3>SEO Optimization</h3>
+                <p>Improve your website's visibility and ranking on search engines with my expert SEO optimization services.</p>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="images/portfolio1.jpg" alt="Portfolio Item 1">
+                <h3>Project Title 1</h3>
+                <p>Description of the project and the technologies used.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/portfolio2.jpg" alt="Portfolio Item 2">
+                <h3>Project Title 2</h3>
+                <p>Description of the project and the technologies used.</p>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="submit-form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 My Static Website</p>
+        <p>&copy; 2024 My Website</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
