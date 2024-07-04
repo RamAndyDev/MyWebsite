@@ -18,13 +18,42 @@
         </nav>
     </header>
     <main>
-        <section>
+        <!-- Contact Section -->
+        <section id="contact">
             <h2>Contact Information</h2>
-            <p>This is the contact page content.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>123 Main Street<br>City, State, ZIP Code</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                </div>
+            </div>
+            <form action="submit-form.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 My Static Website</p>
+        <p>&copy; 2024 My Website</p>
     </footer>
     <script src="js/scripts.js"></script>
 </body>
